@@ -31,3 +31,38 @@
   background-color: #f25822 !important;
   transform: scale(1.4, 1.4) !important;
 }
+
+.mobile-menu {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    position: static;
+    width: auto;
+    max-height: none;
+    overflow: visible;
+    display: flex;
+    box-shadow: none;
+    opacity: 1;
+  }
+}
+
+.collapse {
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.collapse.show {
+  max-height: 99em;
+  transition: max-height 0.5s ease-in-out;
+}

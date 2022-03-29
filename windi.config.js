@@ -6,6 +6,7 @@ export default {
         // serif: ['ui-serif', 'Georgia'],
       },
       lineClamp: {
+        xs: "1",
         sm: "2",
         lg: "5",
       },
@@ -23,16 +24,21 @@ export default {
       },
       boxShadow: {
         "3xl": "rgba(0, 0, 0, 0.1) 0px 10px 50px",
+        "4xl": "rgba(0, 0, 0, 0.1) 0px 4px 12px;",
       },
       transitionProperty: {
         top: "top",
+        "max-height": "max-height",
+      },
+      transitionTimingFunction: {
+        "top-down": "cubic-bezier(0, 1, 0, 1)",
       },
     },
     container: {
       center: true,
       screens: {
         sm: "600px",
-        md: "728px",
+        md: "752px",
         lg: "984px",
         xl: "1240px",
         "2xl": "1240px",

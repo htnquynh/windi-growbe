@@ -11,17 +11,35 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 $(document).ready(function () {
-  let menu = document.getElementById("btn-menu");
+  // map commands to the classList methods
+  const METHOD_MAP = {
+    toggle: "toggle",
+    show: "add",
+    hide: "remove",
+  };
 
-  function toggleMenu(e) {
-    let navLinks = document.getElementById("nav-links");
-    navLinks.classList.toggle("-top-20");
-    //navLinks.classList.toggle("-top-96");
-    navLinks.classList.toggle("-translate-y-full");
-    navLinks.classList.toggle("opacity-0");
-  }
+  const dropdowns = [...document.querySelectorAll("[data-type='dropdown']")];
 
-  menu.onclick = toggleMenu;
+  // set onclick event for every dropdown
+  dropdowns.forEach((dropdown) => {
+    function handleDropdownClick(event) {
+      event.preventDefault();
+      const selectorTarget = dropdown.getAttribute("data-target");
+      const classesForCmd = dropdown.dataset.toggle.split(",");
+      collapse(selectorTarget, "toggle", classesForCmd);
+    }
+    dropdown.onclick = handleDropdownClick.bind(this);
+  });
+
+  // [toggle/add/remove] list class for target
+  const collapse = (selector, cmd, classesName) => {
+    const targets = [...document.querySelectorAll(selector)];
+    targets.forEach((target) => {
+      classesName.forEach((c) => {
+        target.classList[METHOD_MAP[cmd]](c);
+      });
+    });
+  };
 
   const swipers = [...document.querySelectorAll(".swiper")];
 
