@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
-      style="display: swap"
-    />
+
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="img-src 'self' data:; default-src 'self' http://localhost:3000/"
+    /> -->
+
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data:; font-src 'self' data:"
+    /> -->
+
+    <title>GrowBe App</title>
   </head>
   <body class="font-sans">
     <header>
@@ -17,7 +23,7 @@
         class="container py-3 bg-white md:flex md:items-center md:justify-between"
       >
         <div class="flex justify-between items-center">
-          <a href="#"><img src="./assets/Logo.svg" alt="GrowBe" /></a>
+          <a href="#"><img src="/img/Logo.svg" alt="GrowBe" /></a>
 
           <button
             id="btn-menu"
@@ -82,6 +88,8 @@
                     xmlns="http://www.w3.org/2000/svg"
                     class="inline ml-0.5 mb-0.5 h-3 w-3"
                     fill="none"
+                    width="24px"
+                    height="24px"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     stroke-width="2"
@@ -161,19 +169,19 @@
         <div class="container px-4 sm:px-0 pt-8 pb-10 lg:pt-12 lg:pb-16">
           <div class="flex flex-col sm:flex-row sm:relative">
             <img
-              src="./assets/shape-2.svg"
+              src="/img/shape-2.svg"
               alt="shape"
               class="hidden sm:block sm:absolute sm:top-4 sm:-left-20 md:top-20 md:-left-20 lg:top-20 lg:-left-20"
             />
 
             <img
-              src="./assets/shape-4.svg"
+              src="/img/shape-4.svg"
               alt="shape"
               class="hidden sm:block sm:absolute sm:-top-8 sm:right-72 md:-top-6 md:right-96 lg:mr-24 xl:mr-56"
             />
 
             <img
-              src="./assets/shape-3.svg"
+              src="/img/shape-3.svg"
               alt="shape"
               class="hidden sm:block sm:absolute sm:bottom-8 sm:right-72 md:bottom-14 md:right-96 lg:mr-28 xl:mr-60"
             />
@@ -188,7 +196,7 @@
                 <span class="relative"
                   >Marketing
                   <img
-                    src="./assets/eclipse-hero.svg"
+                    src="/img/eclipse-hero.svg"
                     alt="shape"
                     class="absolute -z-1 transform scale-100 top-0.5 -left-2"
                 /></span>
@@ -239,7 +247,7 @@
               class="order-1 sm:order-2 w-full sm:flex-1 mt-0 sm:relative -z-1"
             >
               <img
-                src="./assets/hero-img.png"
+                src="/img/hero-img.png"
                 alt="Hero image"
                 class="sm:absolute sm:top-6 sm:left-8 md:left-0 lg:top-10 lg:left-14 sm:transform sm:scale-125 md:scale-125 lg:scale-125"
               />
@@ -256,32 +264,32 @@
           >
             <li>
               <a href="#">
-                <img src="./assets/brand-1.svg" alt="Branch 1" />
+                <img src="/img/brand-1.svg" alt="Branch 1" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./assets/brand-2.svg" alt="Branch 2" />
+                <img src="/img/brand-2.svg" alt="Branch 2" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./assets/brand-3.svg" alt="Branch 3" />
+                <img src="/img/brand-3.svg" alt="Branch 3" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./assets/brand-4.svg" alt="Branch 4" />
+                <img src="/img/brand-4.svg" alt="Branch 4" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./assets/brand-5.svg" alt="Branch 5" />
+                <img src="/img/brand-5.svg" alt="Branch 5" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="./assets/brand-6.svg" alt="Branch 6" />
+                <img src="/img/brand-6.svg" alt="Branch 6" />
               </a>
             </li>
           </ul>
@@ -311,7 +319,7 @@
           </div>
           <div class="sm:flex-1">
             <img
-              src="./assets/macbook.png"
+              src="/img/macbook.png"
               alt="Macbook"
               class="sm:transform sm:scale-150 md:scale-175 lg:scale-150"
             />
@@ -448,7 +456,7 @@
               class="bg-white hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
             >
               <img
-                src="./assets/service-illustration-1.png"
+                src="/img/service-illustration-1.png"
                 alt="service 1"
                 class="object-center object-scale-down"
               />
@@ -488,7 +496,7 @@
               class="pb-12 flex flex-col items-center bg-white hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
             >
               <img
-                src="./assets/service-illustration-2.png"
+                src="/img/service-illustration-2.png"
                 alt="service 1"
                 class="object-center object-scale-down"
               />
@@ -526,7 +534,7 @@
               class="pb-12 flex flex-col items-center bg-white hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
             >
               <img
-                src="./assets/service-illustration-3.png"
+                src="/img/service-illustration-3.png"
                 alt="service 1"
                 class="object-center object-scale-down"
               />
@@ -569,7 +577,7 @@
         <div class="container flex flex-col md:flex-row">
           <div class="md:flex-1 relative -z-1">
             <img
-              src="./assets/what-we-do-img.png"
+              src="/img/what-we-do-img.png"
               alt="What we do"
               class="md:absolute md:top-28 md:-left-14 lg:top-28 lg:-left-14 transform md:scale-200 lg:scale-125"
             />
@@ -593,7 +601,7 @@
                 class="flex items-start md:items-center gap-4 md:gap-7 p-4 md:py-4 md:px-7 hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
               >
                 <img
-                  src="./assets/globe.svg"
+                  src="/img/globe.svg"
                   alt="What we do 1"
                   class="bg-red-100 rounded-full p-4 md:p-7"
                 />
@@ -611,7 +619,7 @@
                 class="flex items-start md:items-center gap-4 md:gap-7 p-4 md:py-4 md:px-7 hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
               >
                 <img
-                  src="./assets/email.svg"
+                  src="/img/email.svg"
                   alt="What we do 2"
                   class="bg-green-100 rounded-full p-4 md:p-7"
                 />
@@ -627,7 +635,7 @@
                 class="flex items-start md:items-center gap-4 md:gap-7 p-4 md:py-4 md:px-7 hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
               >
                 <img
-                  src="./assets/pie-chart.svg"
+                  src="/img/pie-chart.svg"
                   alt="What we do 1"
                   class="bg-yellow-100 rounded-full p-4 md:p-7"
                 />
@@ -656,19 +664,19 @@
               <h3 class="font-bold text-7xl sm:text-5xl lg:text-7xl">95</h3>
               <p class="text-lg font-semibold text-center">Happy Clients</p>
             </div>
-            <img src="./assets/dot-1.svg" alt="shape" />
+            <img src="/img/dot-1.svg" alt="shape" />
             <div class="flex flex-col gap-2 items-center">
               <h3 class="font-bold text-7xl sm:text-5xl lg:text-7xl">115</h3>
               <p class="text-lg font-semibold text-center">Project Done</p>
             </div>
-            <img src="./assets/dot-2.svg" alt="shape" />
+            <img src="/img/dot-2.svg" alt="shape" />
             <div class="flex flex-col gap-2 items-center">
               <h3 class="font-bold text-7xl sm:text-5xl lg:text-7xl">8+</h3>
               <p class="text-lg font-semibold text-center">
                 Years Of Experience
               </p>
             </div>
-            <img src="./assets/dot-3.svg" alt="shape" />
+            <img src="/img/dot-3.svg" alt="shape" />
             <div class="flex flex-col gap-2 items-center">
               <h3 class="font-bold text-7xl sm:text-5xl lg:text-7xl">12</h3>
               <p class="text-lg font-semibold text-center">National Awards</p>
@@ -685,7 +693,7 @@
           <div class="flex flex-col md:flex-row">
             <div class="flex-1 order-1 md:order-2 relative -z-1">
               <img
-                src="./assets/mailbox-illustration.png"
+                src="/img/mailbox-illustration.png"
                 alt="Mailbox"
                 class="md:absolute md:top-14 md:-left-8 lg:left-16 md:transform md:scale-200 lg:scale-125"
               />
@@ -849,7 +857,7 @@
             >
               <div class="p-8 flex-1 bg-white border border-gray-200">
                 <img
-                  src="./assets/team-1.png"
+                  src="/img/team-1.png"
                   alt="Team 1"
                   class="w-32 h-32 mx-auto"
                 />
@@ -960,7 +968,7 @@
 
               <div class="p-8 flex-1 bg-white border border-gray-200">
                 <img
-                  src="./assets/team-2.png"
+                  src="/img/team-2.png"
                   alt="Team 1"
                   class="w-32 h-32 mx-auto"
                 />
@@ -1071,7 +1079,7 @@
 
               <div class="p-8 flex-1 bg-white border border-gray-200">
                 <img
-                  src="./assets/team-3.png"
+                  src="/img/team-3.png"
                   alt="Team 1"
                   class="w-32 h-32 mx-auto"
                 />
@@ -1182,7 +1190,7 @@
 
               <div class="p-8 flex-1 bg-white border border-gray-200">
                 <img
-                  src="./assets/team-4.png"
+                  src="/img/team-4.png"
                   alt="Team 1"
                   class="w-32 h-32 mx-auto"
                 />
@@ -1316,7 +1324,7 @@
                     class="w-72 sm:w-570 flex flex-col items-center py-7 px-8 relative"
                   >
                     <img
-                      src="./assets/quote.svg"
+                      src="/img/quote.svg"
                       alt="Blog Post"
                       class="absolute top-7 left-1/2 transform -translate-x-1/2 z-0"
                     />
@@ -1331,7 +1339,7 @@
                     </p>
 
                     <img
-                      src="./assets/client-1.jpg"
+                      src="/img/client-1.jpg"
                       alt="Client 1"
                       class="mt-7 w-14 h-14 rounded-full"
                     />
@@ -1348,7 +1356,7 @@
                     class="w-72 sm:w-570 flex flex-col items-center py-7 px-8 relative"
                   >
                     <img
-                      src="./assets/quote.svg"
+                      src="/img/quote.svg"
                       alt="Blog Post"
                       class="absolute top-7 left-1/2 transform -translate-x-1/2 z-0"
                     />
@@ -1363,7 +1371,7 @@
                     </p>
 
                     <img
-                      src="./assets/client-1.jpg"
+                      src="/img/client-1.jpg"
                       alt="Client 1"
                       class="mt-7 w-14 h-14 rounded-full"
                     />
@@ -1380,7 +1388,7 @@
                     class="w-72 sm:w-570 flex flex-col items-center py-7 px-8 relative"
                   >
                     <img
-                      src="./assets/quote.svg"
+                      src="/img/quote.svg"
                       alt="Blog Post"
                       class="absolute top-7 left-1/2 transform -translate-x-1/2 z-0"
                     />
@@ -1395,7 +1403,7 @@
                     </p>
 
                     <img
-                      src="./assets/client-1.jpg"
+                      src="/img/client-1.jpg"
                       alt="Client 1"
                       class="mt-7 w-14 h-14 rounded-full"
                     />
@@ -1412,7 +1420,7 @@
                     class="w-72 sm:w-570 flex flex-col items-center py-7 px-8 relative"
                   >
                     <img
-                      src="./assets/quote.svg"
+                      src="/img/quote.svg"
                       alt="Blog Post"
                       class="absolute top-7 left-1/2 transform -translate-x-1/2 z-0"
                     />
@@ -1427,7 +1435,7 @@
                     </p>
 
                     <img
-                      src="./assets/client-1.jpg"
+                      src="/img/client-1.jpg"
                       alt="Client 1"
                       class="mt-7 w-14 h-14 rounded-full"
                     />
@@ -1468,7 +1476,7 @@
                     class="flex flex-col md:flex-row items-center sm:items-start"
                   >
                     <img
-                      src="./assets/blog-2.png"
+                      src="/img/blog-2.png"
                       alt="Blog Post"
                       class="w-72 h-60 sm:w-80 sm:h-72 md:w-96 md:h-80"
                     />
@@ -1548,7 +1556,7 @@
                     class="flex flex-col md:flex-row items-center sm:items-start"
                   >
                     <img
-                      src="./assets/blog-2.png"
+                      src="/img/blog-2.png"
                       alt="Blog Post"
                       class="w-72 h-60 sm:w-80 sm:h-72 md:w-96 md:h-80"
                     />
@@ -1628,7 +1636,7 @@
                     class="flex flex-col md:flex-row items-center sm:items-start"
                   >
                     <img
-                      src="./assets/blog-2.png"
+                      src="/img/blog-2.png"
                       alt="Blog Post"
                       class="w-72 h-60 sm:w-80 sm:h-72 md:w-96 md:h-80"
                     />
@@ -1708,7 +1716,7 @@
                     class="flex flex-col md:flex-row items-center sm:items-start"
                   >
                     <img
-                      src="./assets/blog-2.png"
+                      src="/img/blog-2.png"
                       alt="Blog Post"
                       class="w-72 h-60 sm:w-80 sm:h-72 md:w-96 md:h-80"
                     />
@@ -1796,7 +1804,7 @@
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10"
         >
           <div>
-            <img src="./assets/Logo.svg" alt="GrowBe" />
+            <img src="/img/Logo.svg" alt="GrowBe" />
             <p class="mt-6 md:mt-10 text-gray-600 font-medium leading-7">
               Distinctively exploit optimal alignments for intuitive bandwidth.
               Quickly coordinate business through revolutionary.
