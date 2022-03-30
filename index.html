@@ -166,7 +166,7 @@
     <main class="overflow-hidden">
       <!-- Hero -->
       <section>
-        <div class="container px-4 sm:px-0 pt-8 pb-10 lg:pt-12 lg:pb-16">
+        <div class="container px-4 sm:px-0 py-10">
           <div class="sm:relative">
             <img
               src="/img/shape-2.svg"
@@ -247,7 +247,7 @@
                 <img
                   src="/img/hero-img.png"
                   alt="Hero image"
-                  class="sm:absolute sm:top-6 sm:left-8 md:left-0 lg:top-10 lg:left-14 sm:transform sm:scale-125"
+                  class="sm:absolute sm:top-6 sm:left-8 md:left-0 lg:top-8 lg:left-14 sm:transform sm:scale-125"
                 />
               </div>
             </div>
@@ -257,9 +257,9 @@
 
       <!-- Brands -->
       <section>
-        <div class="container px-4 py-12 md:py-20 lg:py-28">
+        <div class="container px-8 py-20">
           <ul
-            class="grid grid-cols-1 place-items-center place-content-center gap-4 sm:grid-cols-3 md:grid-cols-6 md:gap-8"
+            class="grid grid-cols-1 place-items-center place-content-center gap-8 sm:grid-cols-3 lg:grid-cols-6"
           >
             <li>
               <a href="#">
@@ -296,48 +296,55 @@
       </section>
 
       <!-- About Us -->
-      <section class="w-full bg-gray-50 py-14 px-4 sm:px-0">
-        <div
-          class="container lg:py-16 flex flex-col sm:flex-row sm:gap-3 sm:items-center lg:gap-4 xl:gap-8 relative"
-        >
-          <div class="sm:flex-1 flex flex-col items-start relative z-10">
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">
-              Perfect Solution For Your Business
-            </h2>
-            <p class="text-base font-medium text-gray-500 pt-5 md:pr-8">
-              Distinctively exploit optimal alignments for intuitive bandwidth.
-              Quickly coordinate e-business applications through revolutionary
-              catalysts for chang the Seamlessly underwhelm optimal testing
-              procedures.
-            </p>
-            <a
-              href="#"
-              class="text-sm md:text-base font-bold bg-tomato-500 text-white py-2.5 px-5 md:px-7 rounded-full mt-9 shadow-lg shadow-red-100 hover:bg-tomato-300 transition-colors ease-in duration-200"
-              >Learn More</a
+      <section class="w-full bg-gray-50 p-8">
+        <div class="container py-0 sm:py-12">
+          <div
+            class="flex flex-col sm:flex-row sm:gap-8 sm:items-center xl:gap-8"
+          >
+            <div
+              class="py-16 sm:py-0 order-2 sm:flex-1 sm:order-1 space-y-8 relative z-10"
             >
-          </div>
-          <div class="sm:flex-1">
-            <img
-              src="/img/macbook.png"
-              alt="Macbook"
-              class="sm:transform sm:scale-150 md:scale-175 lg:scale-150"
-            />
+              <div class="space-y-5">
+                <h2
+                  class="text-2xl sm:text-3xl lg:text-4xl xl:text-45px font-bold"
+                >
+                  Perfect Solution For Your Business
+                </h2>
+                <p class="font-medium text-gray-500 max-w-prose">
+                  Distinctively exploit optimal alignments for intuitive
+                  bandwidth. Quickly coordinate e-business applications through
+                  revolutionary catalysts for chang the Seamlessly underwhelm
+                  optimal testing procedures.
+                </p>
+              </div>
+              <a
+                href="#"
+                class="inline-block text-sm md:text-base font-bold bg-tomato-500 text-white py-2.5 px-5 md:px-7 rounded-full shadow-lg shadow-red-100 hover:bg-tomato-300 transition-colors ease-in duration-200"
+                >Learn More</a
+              >
+            </div>
+            <div class="order-1 sm:flex-1 sm:order-2">
+              <img
+                src="/img/macbook.png"
+                alt="Macbook"
+                class="transform scale-150"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Features -->
-      <section>
-        <div class="container p-4 sm:px-0 lg:py-20">
+      <section class="p-4 lg:py-20">
+        <div class="container">
           <div class="grid grid-cols-1 sm:grid-cols-3 lg:gap-8 xl:gap-14">
             <div
-              class="py-10 px-8 hover:shadow-3xl hover:-translate-y-2 transition-transform ease-in duration-200"
+              class="space-y-6 py-10 px-8 hover:shadow-3xl hover:-translate-y-2 transition-transform ease-in duration-200"
             >
               <div
                 class="inline-block p-6 rounded-2xl bg-orange-100 text-orange-600"
               >
                 <svg
-                  class=""
                   width="25"
                   height="25"
                   viewBox="0 0 28 25"
@@ -350,22 +357,24 @@
                   />
                 </svg>
               </div>
-              <div class="pt-6">
-                <h3 class="text-xl xl:text-2xl font-bold">
+              <div class="space-y-6">
+                <h3 class="text-xl xl:text-2xl font-bold line-clamp-1">
                   Grow Your Business
                 </h3>
-                <p class="pt-4">
+                <p class="line-clamp-2">
                   Leverage agile frameworks to provide a robust synopsis for
                   high level overviews.
                 </p>
-                <a href="#" class="inline-block pt-6 font-bold text-sm"
+                <a
+                  href="#"
+                  class="inline-block font-bold text-sm hover:text-tomato-500 transition-colors ease-in duration-200"
                   >Read more ...</a
                 >
               </div>
             </div>
 
             <div
-              class="py-10 px-8 flex flex-col items-start hover:shadow-3xl hover:-translate-y-2 transition-transform ease-in duration-200"
+              class="space-y-6 py-10 px-8 hover:shadow-3xl hover:-translate-y-2 transition-transform ease-in duration-200"
             >
               <div
                 class="inline-block p-6 rounded-2xl bg-green-100 text-green-600"
@@ -383,20 +392,25 @@
                   />
                 </svg>
               </div>
-              <div class="pt-6">
-                <h3 class="text-xl xl:text-2xl font-bold">Get Quality Ieads</h3>
-                <p class="pt-4">
+
+              <div class="space-y-6">
+                <h3 class="text-xl xl:text-2xl font-bold line-clamp-1">
+                  Get Quality Ideas
+                </h3>
+                <p class="line-clamp-2">
                   Leverage agile frameworks to provide a robust synopsis for
                   high level overviews.
                 </p>
-                <a href="#" class="inline-block pt-6 font-bold text-sm"
+                <a
+                  href="#"
+                  class="inline-block font-bold text-sm hover:text-tomato-500 transition-colors ease-in duration-200"
                   >Read more ...</a
                 >
               </div>
             </div>
 
             <div
-              class="py-10 px-8 flex flex-col items-start hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
+              class="space-y-6 py-10 px-8 hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
             >
               <div
                 class="inline-block p-6 rounded-2xl bg-yellow-100 text-yellow-600"
@@ -418,13 +432,17 @@
                   />
                 </svg>
               </div>
-              <div class="pt-6">
-                <h3 class="text-xl xl:text-2xl font-bold">Drive More Sales</h3>
-                <p class="pt-4">
+              <div class="space-y-6">
+                <h3 class="text-xl xl:text-2xl font-bold line-clamp-1">
+                  Drive More Sales
+                </h3>
+                <p class="line-clamp-2">
                   Leverage agile frameworks to provide a robust synopsis for
                   high level overviews.
                 </p>
-                <a href="#" class="inline-block pt-6 font-bold text-sm"
+                <a
+                  href="#"
+                  class="inline-block font-bold text-sm hover:text-tomato-500 transition-colors ease-in duration-200"
                   >Read more ...</a
                 >
               </div>
@@ -434,140 +452,148 @@
       </section>
 
       <!-- Services -->
-      <section class="w-full bg-gray-50 px-4 py-12 sm:py-16 md:py-24">
-        <div class="container flex flex-col items-center">
-          <div class="flex flex-col items-center gap-2 lg:gap-5">
-            <h2
-              class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-center"
-            >
-              Why You Should Choose Us.
-            </h2>
-            <p class="max-w-3xl text-gray-500 text-center">
-              Distinctively exploit optimal alignments for intuitive bandwidth.
-              Quickly coordinate e-business applications through revolutionary
-              catalysts.
-            </p>
-          </div>
-          <div
-            class="pt-8 md:pt-14 grid grid-col-1 md:grid-cols-3 gap-4 lg:gap-8"
-          >
-            <div
-              class="bg-white hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
-            >
-              <div class="aspect-270/370">
-                <img src="/img/service-illustration-1.png" alt="service 1" />
-              </div>
-              <div class="px-4 md:px-8 py-12">
-                <h3 class="text-xl md:text-2xl font-bold text-center">
-                  Keyword Research
-                </h3>
-                <p class="pt-4 md:pt-6 max-w-xs text-center text-gray-400">
-                  Business applications through revolutionary catalysts for
-                  chang the Seamlessly underwhelm dures.
-                </p>
-                <div class="pt-10 text-center">
-                  <a
-                    href="#"
-                    class="inline-block py-3 px-7 font-bold text-sm bg-tomato-500 text-white rounded-full shadow-lg shadow-red-100 hover:bg-tomato-300 transition-all ease-in duration-200"
-                  >
-                    Learn more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline ml-1"
-                      fill="none"
-                      height="16px"
-                      width="16px"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
+      <section class="w-full bg-gray-50 px-4 py-20">
+        <div class="container">
+          <div class="space-y-10">
+            <div class="space-y-5 text-center">
+              <h2
+                class="text-2xl sm:text-3xl lg:text-4xl xl:text-45px font-bold"
+              >
+                Why You Should Choose Us.
+              </h2>
+              <p class="text-gray-500 inline-block max-w-prose">
+                Distinctively exploit optimal alignments for intuitive
+                bandwidth. Quickly coordinate e-business applications through
+                revolutionary catalysts.
+              </p>
             </div>
             <div
-              class="bg-white hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
+              class="grid grid-col-1 md:grid-cols-3 justify-items-center gap-8"
             >
-              <div class="aspect-270/370">
-                <img src="/img/service-illustration-2.png" alt="service 1" />
-              </div>
-              <div class="px-4 md:px-8 py-12">
-                <h3 class="text-xl md:text-2xl font-bold text-center">
-                  Seo Optimazadion
-                </h3>
-                <p class="pt-4 md:mt-6 max-w-xs text-center text-gray-400">
-                  Business applications through revolutionary catalysts for
-                  chang the Seamlessly underwhelm dures.
-                </p>
-                <div class="pt-10 text-center">
-                  <a
-                    href="#"
-                    class="inline-block font-bold text-sm bg-tomato-500 text-white py-3 px-7 rounded-full shadow-lg shadow-red-100 hover:bg-tomato-300 transition-all ease-in duration-200"
-                  >
-                    Learn more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline ml-1"
-                      fill="none"
-                      height="16px"
-                      width="16px"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
+              <div
+                class="max-w-sm md:w-full bg-white hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
+              >
+                <div class="aspect-270/370">
+                  <img src="/img/service-illustration-1.png" alt="service 1" />
+                </div>
+                <div class="px-8 py-12 text-center space-y-10">
+                  <div class="space-y-6">
+                    <h3 class="text-xl md:text-2xl font-bold line-clamp-1">
+                      Keyword Research
+                    </h3>
+                    <p class="inline-block max-w-xs text-gray-400">
+                      Business applications through revolutionary catalysts for
+                      chang the Seamlessly underwhelm dures.
+                    </p>
+                  </div>
+                  <div class="">
+                    <a
+                      href="#"
+                      class="inline-block font-bold text-sm bg-tomato-500 text-white py-3 px-7 rounded-full shadow-lg shadow-red-100 hover:bg-tomato-300 transition-all ease-in duration-200"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </a>
+                      Learn more
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="inline"
+                        fill="none"
+                        height="16px"
+                        width="16px"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="bg-white hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
-            >
-              <div class="aspect-270/370">
-                <img src="/img/service-illustration-3.png" alt="service 1" />
-              </div>
-              <div class="px-4 md:px-8 py-12">
-                <h3 class="text-xl md:text-2xl font-bold text-center">
-                  Social Marketing
-                </h3>
-                <p class="mt-4 md:mt-6 max-w-xs text-center text-gray-400">
-                  Business applications through revolutionary catalysts for
-                  chang the Seamlessly underwhelm dures.
-                </p>
-                <div class="pt-10 text-center">
-                  <a
-                    href="#"
-                    class="inline-block font-bold text-sm bg-tomato-500 text-white py-3 px-7 rounded-full shadow-lg shadow-red-100 hover:bg-tomato-300 transition-all ease-in duration-200"
-                  >
-                    Learn more
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline ml-1"
-                      fill="none"
-                      height="16px"
-                      width="16px"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
+              <div
+                class="max-w-sm md:w-full bg-white hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
+              >
+                <div class="aspect-270/370">
+                  <img src="/img/service-illustration-2.png" alt="service 1" />
+                </div>
+                <div class="px-8 py-12 text-center space-y-10">
+                  <div class="space-y-6">
+                    <h3 class="text-xl md:text-2xl font-bold line-clamp-1">
+                      Seo Optimazadion
+                    </h3>
+                    <p class="inline-block max-w-xs text-gray-400">
+                      Business applications through revolutionary catalysts for
+                      chang the Seamlessly underwhelm dures.
+                    </p>
+                  </div>
+                  <div class="">
+                    <a
+                      href="#"
+                      class="inline-block font-bold text-sm bg-tomato-500 text-white py-3 px-7 rounded-full shadow-lg shadow-red-100 hover:bg-tomato-300 transition-all ease-in duration-200"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </a>
+                      Learn more
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="inline"
+                        fill="none"
+                        height="16px"
+                        width="16px"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="max-w-sm md:w-full bg-white hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
+              >
+                <div class="aspect-270/370">
+                  <img src="/img/service-illustration-3.png" alt="service 1" />
+                </div>
+                <div class="px-8 py-12 text-center space-y-10">
+                  <div class="space-y-6">
+                    <h3 class="text-xl md:text-2xl font-bold line-clamp-1">
+                      Social Marketing
+                    </h3>
+                    <p class="inline-block max-w-xs text-gray-400">
+                      Business applications through revolutionary catalysts for
+                      chang the Seamlessly underwhelm dures.
+                    </p>
+                  </div>
+                  <div class="">
+                    <a
+                      href="#"
+                      class="inline-block font-bold text-sm bg-tomato-500 text-white py-3 px-7 rounded-full shadow-lg shadow-red-100 hover:bg-tomato-300 transition-all ease-in duration-200"
+                    >
+                      Learn more
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="inline"
+                        fill="none"
+                        height="16px"
+                        width="16px"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -576,32 +602,32 @@
       </section>
 
       <!-- What we do -->
-      <section class="w-full pt-20 pb-0 px-4 lg:pt-32 lg:pb-16">
+      <section class="w-full px-4 py-12">
         <div class="container flex flex-col md:flex-row">
           <div class="md:w-6/12 relative -z-1">
             <img
               src="/img/what-we-do-img.png"
               alt="What we do"
-              class="md:absolute md:top-28 md:-left-14 lg:top-28 lg:-left-14 transform md:scale-200 lg:scale-125"
+              class="md:absolute md:top-28 md:-left-14 transform md:scale-125"
             />
           </div>
 
-          <div class="md:w-6/12 relative z-10">
-            <div class="">
+          <div class="md:w-6/12 py-8 space-y-8 relative z-10">
+            <div class="space-y-8">
               <h2
-                class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold"
+                class="text-2xl sm:text-3xl lg:text-4xl xl:text-45px font-bold"
               >
                 You may ask what SEO & why do you need it?
               </h2>
-              <p class="text-gray-500 mt-6 lg:mt-8 max-w-xl">
+              <p class="text-gray-500 max-w-prose">
                 Distinctively exploit optimal alignments for intuitive
                 bandwidth. Quickly coordinate e-business applications through
                 revolutionary.
               </p>
             </div>
-            <div class="space-y-6 py-8">
+            <div class="space-y-6">
               <div
-                class="flex items-start md:items-center gap-4 md:gap-7 p-4 md:py-4 md:px-7 hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
+                class="flex items-start md:items-center gap-4 md:gap-7 p-4 md:px-7 hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
               >
                 <div
                   class="bg-orange-100 text-orange-400 rounded-full p-4 md:p-7"
@@ -629,9 +655,8 @@
                   </p>
                 </div>
               </div>
-
               <div
-                class="flex items-start md:items-center gap-4 md:gap-7 p-4 md:py-4 md:px-7 hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
+                class="flex items-start md:items-center gap-4 md:gap-7 p-4 md:px-7 hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
               >
                 <div
                   class="bg-green-100 text-green-400 rounded-full p-4 md:p-7"
@@ -658,7 +683,7 @@
                 </div>
               </div>
               <div
-                class="flex items-start md:items-center gap-4 md:gap-7 p-4 md:py-4 md:px-7 hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
+                class="flex items-start md:items-center gap-4 md:gap-7 p-4 md:px-7 hover:shadow-3xl transition-all ease-in duration-200 hover:-translate-y-2"
               >
                 <div
                   class="bg-yellow-100 text-yellow-400 rounded-full p-4 md:p-7"
@@ -697,37 +722,35 @@
 
       <!-- Fun fact -->
       <section>
-        <div class="container p-4 sm:px-0 sm:py-16">
+        <div class="container p-10 sm:px-4">
           <div
-            class="flex flex-col sm:flex-row items-center gap-4 md:justify-between text-gray-500 border-2 border-gray-500 p-4 md:p-10 lg:px-20"
+            class="p-10 flex flex-col sm:flex-row justify-center items-center gap-8 text-gray-500 border-2 border-gray-300"
           >
-            <div class="flex flex-col gap-2 items-center">
-              <h3 class="font-bold text-7xl sm:text-5xl lg:text-7xl">95</h3>
-              <p class="text-lg font-semibold text-center">Happy Clients</p>
+            <div class="space-y-2 text-center">
+              <h3 class="font-bold text-5xl lg:text-70px">95</h3>
+              <p class="text-lg font-semibold">Happy Clients</p>
             </div>
             <img src="/img/dot-1.svg" alt="shape" />
-            <div class="flex flex-col gap-2 items-center">
-              <h3 class="font-bold text-7xl sm:text-5xl lg:text-7xl">115</h3>
-              <p class="text-lg font-semibold text-center">Project Done</p>
+            <div class="space-y-2 text-center">
+              <h3 class="font-bold text-5xl lg:text-70px">115</h3>
+              <p class="text-lg font-semibold">Project Done</p>
             </div>
             <img src="/img/dot-2.svg" alt="shape" />
-            <div class="flex flex-col gap-2 items-center">
-              <h3 class="font-bold text-7xl sm:text-5xl lg:text-7xl">8+</h3>
-              <p class="text-lg font-semibold text-center">
-                Years Of Experience
-              </p>
+            <div class="space-y-2 text-center">
+              <h3 class="font-bold text-5xl lg:text-70px">8+</h3>
+              <p class="text-lg font-semibold">Years Of Experience</p>
             </div>
             <img src="/img/dot-3.svg" alt="shape" />
-            <div class="flex flex-col gap-2 items-center">
-              <h3 class="font-bold text-7xl sm:text-5xl lg:text-7xl">12</h3>
-              <p class="text-lg font-semibold text-center">National Awards</p>
+            <div class="space-y-2 text-center">
+              <h3 class="font-bold text-5xl lg:text-70px">12</h3>
+              <p class="text-lg font-semibold">National Awards</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Mail box -->
-      <section class="border">
+      <section>
         <div class="container px-4 sm:px-0 py-14">
           <div class="flex flex-col sm:flex-row">
             <div class="sm:w-5/12 order-1 sm:order-2 relative -z-1">
@@ -742,7 +765,7 @@
             >
               <div class="space-y-6">
                 <h2
-                  class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold"
+                  class="text-2xl sm:text-3xl lg:text-4xl xl:text-45px font-bold"
                 >
                   Check Your Website Speed
                 </h2>
@@ -783,96 +806,96 @@
 
       <!-- Plans -->
       <section class="w-full bg-gray-50 px-4 py-14 md:py-24">
-        <div class="container flex flex-col items-center">
-          <div class="flex flex-col items-center gap-5">
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">
-              Our Plans
-            </h2>
-            <p class="max-w-3xl text-gray-500 text-center">
-              Choose the right SEO for you
-            </p>
-          </div>
-
-          <div
-            class="w-full mt-8 md:mt-14 flex flex-col sm:flex-row sm:items-center gap-4 lg:gap-10"
-          >
-            <div class="basis-full p-6 flex flex-col bg-white">
-              <p class="text-2xl font-medium text-center">Basic</p>
-              <div class="flex justify-center items-start mt-6">
-                <span class="font-medium text-lg mt-1 mr-2">$</span>
-                <div class="flex items-end">
-                  <span class="text-5xl lg:text-7xl font-medium">30</span>
-                  <span class="text-lg font-medium leading-9">/month</span>
-                </div>
-              </div>
-              <div
-                class="mt-4 md:mt-6 font-medium text-center text-gray-600 leading-8"
+        <div class="container">
+          <div class="space-y-10">
+            <div class="text-center space-y-5">
+              <h2
+                class="text-2xl sm:text-3xl lg:text-4xl xl:text-45px font-bold"
               >
-                <p>50GB Bandwidth</p>
-                <p>Business & Financ Analysing</p>
-                <p>24 Hour Support</p>
-                <p>Customer Management</p>
-              </div>
-              <!-- <div class="text-center"> -->
-              <a
-                href="#"
-                class="text-center font-bold text-sm text-tomato-500 bg-red-100 py-4 px-7 mt-10 rounded-full hover:bg-tomato-300 hover:text-white transition-colors ease-in duration-200"
-              >
-                Get Started
-              </a>
-              <!-- </div> -->
-            </div>
-
-            <div class="w-full py-10 px-6 flex flex-col bg-white shadow-xl">
-              <p class="text-tomato-500 text-2xl font-medium text-center">
-                Beginner
+                Our Plans
+              </h2>
+              <p class="text-gray-500 inline-block max-w-prose">
+                Choose the right SEO for you
               </p>
-              <div class="flex justify-center items-start mt-6">
-                <span class="font-medium text-lg mt-1 mr-2">$</span>
-                <div class="flex items-end">
-                  <span class="text-5xl lg:text-7xl font-medium">55</span>
-                  <span class="text-lg font-medium leading-9">/month</span>
-                </div>
-              </div>
-              <div
-                class="mt-4 md:mt-6 font-medium text-center text-gray-600 leading-8"
-              >
-                <p>50GB Bandwidth</p>
-                <p>Business & Financ Analysing</p>
-                <p>24 Hour Support</p>
-                <p>Customer Management</p>
-              </div>
-              <a
-                href="#"
-                class="text-center font-bold text-sm text-white bg-tomato-500 py-4 px-8 mt-10 rounded-full shadow-lg shadow-red-100 hover:bg-tomato-300 transition-colors ease-in duration-200"
-              >
-                Get Started
-              </a>
             </div>
 
-            <div class="w-full p-6 flex flex-col bg-white">
-              <p class="text-2xl font-medium text-center">Advanced</p>
-              <div class="flex justify-center items-start mt-6">
-                <span class="font-medium text-lg mt-1 mr-2">$</span>
-                <div class="flex items-end">
-                  <span class="text-5xl lg:text-7xl font-medium">129</span>
-                  <span class="text-lg font-medium leading-9">/month</span>
-                </div>
-              </div>
+            <div
+              class="w-full flex flex-col sm:flex-row items-center gap-4 lg:gap-10"
+            >
               <div
-                class="mt-4 md:mt-6 font-medium text-center text-gray-600 leading-8"
+                class="w-full max-w-md px-6 py-10 bg-white text-center space-y-6"
               >
-                <p>50GB Bandwidth</p>
-                <p>Business & Financ Analysing</p>
-                <p>24 Hour Support</p>
-                <p>Customer Management</p>
+                <p class="text-2xl font-medium">Basic</p>
+                <div class="flex justify-center items-start mt-6">
+                  <span class="font-medium text-lg mt-1 mr-2">$</span>
+                  <div class="flex items-end">
+                    <span class="text-5xl lg:text-70px font-medium">30</span>
+                    <span class="text-lg font-medium leading-9">/month</span>
+                  </div>
+                </div>
+                <div class="font-medium text-gray-600 leading-8">
+                  <p>50GB Bandwidth</p>
+                  <p>Business & Financ Analysing</p>
+                  <p>24 Hour Support</p>
+                  <p>Customer Management</p>
+                </div>
+                <a
+                  href="#"
+                  class="inline-block font-bold text-sm text-tomato-500 bg-red-100 py-4 px-12 rounded-full hover:bg-tomato-300 hover:text-white transition-colors ease-in duration-200"
+                >
+                  Get Started
+                </a>
               </div>
-              <a
-                href="#"
-                class="text-center font-bold text-sm text-tomato-500 bg-red-100 py-4 px-7 mt-10 rounded-full hover:bg-tomato-300 hover:text-white transition-colors ease-in duration-200"
+
+              <div
+                class="w-full max-w-md px-6 py-14 bg-white shadow-xl text-center space-y-6"
               >
-                Get Started
-              </a>
+                <p class="text-tomato-500 text-2xl font-medium">Beginner</p>
+                <div class="flex justify-center items-start mt-6">
+                  <span class="font-medium text-lg mt-1 mr-2">$</span>
+                  <div class="flex items-end">
+                    <span class="text-5xl lg:text-70px font-medium">55</span>
+                    <span class="text-lg font-medium leading-9">/month</span>
+                  </div>
+                </div>
+                <div class="font-medium text-gray-600 leading-8">
+                  <p>50GB Bandwidth</p>
+                  <p>Business & Financ Analysing</p>
+                  <p>24 Hour Support</p>
+                  <p>Customer Management</p>
+                </div>
+                <a
+                  href="#"
+                  class="inline-block font-bold text-sm text-white bg-tomato-500 py-4 px-12 rounded-full shadow-lg shadow-red-100 hover:bg-tomato-300 transition-colors ease-in duration-200"
+                >
+                  Get Started
+                </a>
+              </div>
+
+              <div
+                class="w-full max-w-md px-6 py-10 bg-white text-center space-y-6"
+              >
+                <p class="text-2xl font-medium">Advanced</p>
+                <div class="flex justify-center items-start">
+                  <span class="font-medium text-lg mt-1 mr-2">$</span>
+                  <div class="flex items-end">
+                    <span class="text-5xl lg:text-70px font-medium">129</span>
+                    <span class="text-lg font-medium leading-9">/month</span>
+                  </div>
+                </div>
+                <div class="font-medium text-gray-600 leading-8">
+                  <p>50GB Bandwidth</p>
+                  <p>Business & Financ Analysing</p>
+                  <p>24 Hour Support</p>
+                  <p>Customer Management</p>
+                </div>
+                <a
+                  href="#"
+                  class="inline-block font-bold text-sm text-tomato-500 bg-red-100 py-4 px-12 rounded-full hover:bg-tomato-300 hover:text-white transition-colors ease-in duration-200"
+                >
+                  Get Started
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -881,23 +904,23 @@
       <!-- Team -->
       <section>
         <div class="container px-4 md:px-0 py-12 sm:py-16 lg:py-24">
-          <div class="flex flex-col items-center">
-            <div class="flex flex-col items-center gap-5">
+          <div class="space-y-10">
+            <div class="space-y-5 text-center">
               <h2
-                class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-center"
+                class="text-2xl sm:text-3xl lg:text-4xl xl:text-45px font-bold"
               >
                 Our Expert Team Members
               </h2>
-              <p class="text-gray-500 text-center">
+              <p class="text-gray-500 max-w-prose inline-block">
                 This new-found knowledge may then be used by engineers to create
                 new tools and machines.
               </p>
             </div>
 
             <div
-              class="mt-8 md:mt-14 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-stretch gap-7"
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-stretch gap-7"
             >
-              <div class="p-8 flex-1 bg-white border border-gray-200">
+              <div class="p-8 bg-white border border-gray-200">
                 <img
                   src="/img/team-1.png"
                   alt="Team 1"
@@ -911,11 +934,10 @@
                   <p
                     class="mt-2 font-medium text-sm sm:text-base text-center text-gray-600"
                   >
-                    Web Develper
+                    Web Developer
                   </p>
-                  <!-- <div class="pt-6"> -->
                   <ul class="pt-6 flex justify-center gap-3">
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-white p-1 rounded-full bg-tomato-500"
@@ -935,7 +957,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-gray-400 p-1 rounded-full"
@@ -955,7 +977,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-gray-400 p-1 rounded-full"
@@ -983,7 +1005,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-gray-400 p-1 rounded-full"
@@ -1004,11 +1026,10 @@
                       </a>
                     </li>
                   </ul>
-                  <!-- </div> -->
                 </div>
               </div>
 
-              <div class="p-8 flex-1 bg-white border border-gray-200">
+              <div class="p-8 bg-white border border-gray-200">
                 <img
                   src="/img/team-2.png"
                   alt="Team 1"
@@ -1024,9 +1045,8 @@
                   >
                     Web Develper
                   </p>
-                  <!-- <div class="pt-6"> -->
                   <ul class="pt-6 flex justify-center gap-3">
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-white p-1 rounded-full bg-tomato-500"
@@ -1046,7 +1066,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-gray-400 p-1 rounded-full"
@@ -1066,7 +1086,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-gray-400 p-1 rounded-full"
@@ -1094,7 +1114,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-gray-400 p-1 rounded-full"
@@ -1115,11 +1135,10 @@
                       </a>
                     </li>
                   </ul>
-                  <!-- </div> -->
                 </div>
               </div>
 
-              <div class="p-8 flex-1 bg-white border border-gray-200">
+              <div class="p-8 bg-white border border-gray-200">
                 <img
                   src="/img/team-3.png"
                   alt="Team 1"
@@ -1135,9 +1154,8 @@
                   >
                     Ceo & Co-Funder
                   </p>
-                  <!-- <div class="pt-6"> -->
                   <ul class="pt-6 flex justify-center gap-3">
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-white p-1 rounded-full bg-tomato-500"
@@ -1157,7 +1175,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-gray-400 p-1 rounded-full"
@@ -1177,7 +1195,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-gray-400 p-1 rounded-full"
@@ -1205,7 +1223,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-gray-400 p-1 rounded-full"
@@ -1226,29 +1244,27 @@
                       </a>
                     </li>
                   </ul>
-                  <!-- </div> -->
                 </div>
               </div>
 
-              <div class="p-8 flex-1 bg-white border border-gray-200">
+              <div class="p-8 bg-white border border-gray-200">
                 <img
                   src="/img/team-4.png"
                   alt="Team 1"
                   class="w-32 h-32 mx-auto"
                 />
 
-                <div class="pt-4">
-                  <h4 class="font-semibold text-xl sm:text-2xl text-center">
+                <div class="pt-4 text-center">
+                  <h4 class="font-semibold text-xl sm:text-2xl">
                     Nelson Mecoy
                   </h4>
                   <p
-                    class="mt-2 font-medium text-sm sm:text-base text-center text-gray-600"
+                    class="pt-2 font-medium text-sm sm:text-base text-gray-600"
                   >
                     Marketing Manager
                   </p>
-                  <!-- <div class="pt-6"> -->
                   <ul class="pt-6 flex justify-center gap-3">
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-white p-1 rounded-full bg-tomato-500"
@@ -1268,7 +1284,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-gray-400 p-1 rounded-full"
@@ -1288,7 +1304,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-gray-400 p-1 rounded-full"
@@ -1316,7 +1332,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li>
+                    <li class="leading-0">
                       <a
                         href="#"
                         class="inline-block text-gray-400 p-1 rounded-full"
@@ -1337,7 +1353,6 @@
                       </a>
                     </li>
                   </ul>
-                  <!-- </div> -->
                 </div>
               </div>
             </div>
@@ -1346,19 +1361,19 @@
       </section>
 
       <!-- Testimonials -->
-      <section class="w-full pt-8 pb-4 lg:py-20">
-        <div class="flex flex-col items-center">
-          <div class="flex flex-col items-center gap-5">
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">
+      <section class="w-full py-8 lg:py-20">
+        <div class="">
+          <div class="space-y-5 text-center">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-45px font-bold">
               Our Clients Say
             </h2>
-            <p class="text-gray-500 text-center max-w-lg">
+            <p class="text-gray-500 text-center max-w-prose inline-block">
               Our in - house search engine experts deliver profitable Google,
               Bing, Yahoo Ranking.
             </p>
           </div>
 
-          <div class="w-full sm:py-6 md:py-10">
+          <div class="w-full py-6">
             <div class="swiper mySwiper2" data-option='{"initialSlide": "1"}'>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -1498,12 +1513,12 @@
 
       <!-- Blog Post -->
       <section class="w-full py-8 lg:py-20">
-        <div class="space-y-4">
+        <div class="">
           <div class="space-y-5 text-center">
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-45px font-bold">
               Our Latest News
             </h2>
-            <p class="text-gray-500 max-w-xl inline-block">
+            <p class="text-gray-500 max-w-prose inline-block">
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
               posuere cubilia Curae Suspendisse ante arcu, consectetur id nisl
               eget.
@@ -1876,13 +1891,16 @@
         >
           <div>
             <img src="/img/Logo.svg" alt="GrowBe" />
-            <p class="mt-6 md:mt-10 text-gray-600 font-medium leading-7">
+            <p class="pt-6 md:pt-10 text-gray-600 font-medium leading-7">
               Distinctively exploit optimal alignments for intuitive bandwidth.
               Quickly coordinate business through revolutionary.
             </p>
-            <ul class="mt-6 flex items-center gap-3">
-              <li>
-                <a href="#" class="text-white p-1 rounded-full bg-tomato-500">
+            <ul class="pt-6 flex items-center gap-3">
+              <li class="leading-0">
+                <a
+                  href="#"
+                  class="inline-block text-white p-1 rounded-full bg-tomato-500"
+                >
                   <svg
                     class="w-4 h-4"
                     width="11"
@@ -1898,8 +1916,8 @@
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="#" class="text-gray-400 p-1 rounded-full">
+              <li class="leading-0">
+                <a href="#" class="inline-block text-gray-400 p-1 rounded-full">
                   <svg
                     class="w-4 h-4"
                     width="11"
@@ -1915,8 +1933,8 @@
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="#" class="text-gray-400 p-1 rounded-full">
+              <li class="leading-0">
+                <a href="#" class="inline-block text-gray-400 p-1 rounded-full">
                   <svg
                     class="w-4 h-4"
                     width="11"
@@ -1940,8 +1958,8 @@
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="#" class="text-gray-400 p-1 rounded-full">
+              <li class="leading-0">
+                <a href="#" class="inline-block text-gray-400 p-1 rounded-full">
                   <svg
                     class="w-4 h-4"
                     width="11"
