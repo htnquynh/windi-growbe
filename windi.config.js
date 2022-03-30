@@ -10,6 +10,9 @@ export default {
         sm: "2",
         lg: "5",
       },
+      aspectRatio: {
+        "33/37": "330/370",
+      },
       colors: {
         tomato: {
           300: "#F08922",
