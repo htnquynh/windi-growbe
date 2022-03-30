@@ -3,13 +3,13 @@ import WindiCSS from "vite-plugin-windicss";
 
 export default defineConfig({
   plugins: [WindiCSS()],
-  publicDir: "./assets",
+  publicDir: "src/public/",
   build: {
-    // emptyOutDir: true,
-    // outDir: "assets",
-    // assetsDir: "",
+    emptyOutDir: true,
+    outDir: "assets",
+    assetsDir: "",
     rollupOptions: {
-      input: ["src/js/main.js"],
+      // input: ["src/js/main.js"],
       // external: ["jquery"],
     },
   },
