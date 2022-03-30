@@ -55,9 +55,9 @@
           class="absolute z-20 top-16 left-0 max-h-0 w-full overflow-hidden bg-white shadow-md md:static md:w-auto md:max-h-none md:overflow-visible md:shadow-none"
         >
           <div
-            class="py-6 px-6 md:p-0 flex flex-col items-start md:flex-row md:items-center"
+            class="py-6 px-6 md:p-0 flex flex-col items-start md:flex-row md:items-center lg:gap-3"
           >
-            <ul class="flex flex-col md:flex-row md:items-center">
+            <ul class="flex flex-col md:flex-row md:items-center lg:gap-3">
               <li class="p-2">
                 <a href="#" class="text-tomato-500">Home</a>
               </li>
@@ -769,7 +769,7 @@
                 >
                   Check Your Website Speed
                 </h2>
-                <p class="text-gray-500 sm:max-w-lg">
+                <p class="text-gray-500 max-w-lg">
                   Distinctively exploit optimal alignments for intuitive
                   bandwidth. Quickly coordinate e-business through
                   revolutionary.
@@ -777,7 +777,7 @@
               </div>
               <form>
                 <div
-                  class="flex flex-col gap-3 sm:gap-0 sm:flex-row sm:items-center text-sm"
+                  class="flex flex-col gap-3 sm:gap-0 sm:flex-row sm:items-center text-sm max-w-sm"
                 >
                   <input
                     type="text"
@@ -1885,13 +1885,13 @@
     </main>
 
     <footer class="w-full bg-gray-100 px-4 pt-12 sm:px-8 sm:pt-14 md:pt-28">
-      <div class="container flex flex-col gap-14">
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10"
-        >
+      <div class="container space-y-14">
+        <div class="flex flex-wrap justify-between gap-10">
           <div>
             <img src="/img/Logo.svg" alt="GrowBe" />
-            <p class="pt-6 md:pt-10 text-gray-600 font-medium leading-7">
+            <p
+              class="max-w-270px pt-6 md:pt-10 text-gray-600 font-medium leading-7"
+            >
               Distinctively exploit optimal alignments for intuitive bandwidth.
               Quickly coordinate business through revolutionary.
             </p>
@@ -1980,7 +1980,7 @@
           <div>
             <h4 class="font-bold text-2xl">Our Company</h4>
             <ul
-              class="mt-5 md:mt-9 list-disc list-inside marker:text-tomato-500 font-semibold text-gray-600 leading-9"
+              class="pt-5 md:pt-9 list-disc list-inside marker:text-tomato-500 font-semibold text-gray-600 leading-9"
             >
               <li><a href="#">About Us</a></li>
               <li><a href="#"> Our Services</a></li>
@@ -1992,7 +1992,7 @@
           <div>
             <h4 class="font-bold text-2xl">Our Services</h4>
             <ul
-              class="mt-5 md:mt-9 list-disc list-inside marker:text-tomato-500 font-semibold text-gray-600 leading-9"
+              class="pt-5 md:pt-9 list-disc list-inside marker:text-tomato-500 font-semibold text-gray-600 leading-9"
             >
               <li><a href="#"> Digital Marketing</a></li>
               <li><a href="#">SEO Optimazation</a></li>
@@ -2001,11 +2001,9 @@
               <li><a href="#">Terms & Privacy</a></li>
             </ul>
           </div>
-          <div>
+          <div class="max-w-270px">
             <h4 class="font-bold text-xl md:text-2xl">Contact Us</h4>
-            <div
-              class="mt-5 md:mt-9 flex flex-col gap-3 text-gray-600 leading-7"
-            >
+            <div class="pt-5 md:pt-9 space-y-3 text-gray-600 leading-7">
               <p>
                 <strong>Location:</strong> 1370 Orvilly Rot APT, New York, USA
               </p>
